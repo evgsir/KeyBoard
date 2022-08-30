@@ -1,0 +1,220 @@
+﻿<Window x:Class="KeyBoard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyBoard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="800">
+    <Window.Resources>
+        <ResourceDictionary Source="MainWindowStyles.xaml"></ResourceDictionary>
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+        <StackPanel Style="{StaticResource KeyBoardPart}" DockPanel.Dock="Right">
+            <Grid> 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" ></RowDefinition>
+                    <RowDefinition Height="50" ></RowDefinition>
+                    <RowDefinition Height="50" ></RowDefinition>
+                    <RowDefinition Height="50" ></RowDefinition>
+                    <RowDefinition Height="50" ></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="0" Content="Home" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="0" Content="PgUp" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="1" Content="End" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="1" Content="PgDn" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="2" Content="Insert" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="2" Content="Pause" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="3" Content="PrScr" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="3" Content="ScLc" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="4" Content="Параметры" />
+                <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="4" Content="Справка" />
+            </Grid>
+            
+        </StackPanel>
+            
+        <StackPanel Style="{StaticResource KeyBoardPart}" DockPanel.Dock="Left">
+            <Grid> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"> </ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="0" Content="Esc" />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="0" Content="Ё"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="2" Grid.Row="0" Content="1"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="3" Grid.Row="0" Content="2"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="4" Grid.Row="0" Content="3"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="5" Grid.Row="0" Content="4"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="6" Grid.Row="0" Content="5"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="7" Grid.Row="0" Content="5"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="8" Grid.Row="0" Content="7"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="9" Grid.Row="0" Content="8"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="10" Grid.Row="0" Content="9"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="11" Grid.Row="0" Content="0"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="12" Grid.Row="0" Content="-"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="13" Grid.Row="0" Content="+"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="14" Grid.Row="0" Content="Bksp"  />
+            </Grid>
+            <Grid> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"> </ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="0" Content="Tab" />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="0" Content="Й"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="2" Grid.Row="0" Content="Ц"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="3" Grid.Row="0" Content="У"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="4" Grid.Row="0" Content="К"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="5" Grid.Row="0" Content="Е"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="6" Grid.Row="0" Content="Н"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="7" Grid.Row="0" Content="Г"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="8" Grid.Row="0" Content="Ш"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="9" Grid.Row="0" Content="Щ"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="10" Grid.Row="0" Content="З"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="11" Grid.Row="0" Content="Х"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="12" Grid.Row="0" Content="Ъ"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="13" Grid.Row="0" Content="/"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="14" Grid.Row="0" Content="Del"  />
+            </Grid>
+            <Grid> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"> </ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="0" Content="Caps" />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="0" Content="Ф"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="2" Grid.Row="0" Content="Ы"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="3" Grid.Row="0" Content="В"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="4" Grid.Row="0" Content="А"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="5" Grid.Row="0" Content="П"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="6" Grid.Row="0" Content="Р"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="7" Grid.Row="0" Content="О"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="8" Grid.Row="0" Content="Л"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="9" Grid.Row="0" Content="Д"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="10" Grid.Row="0" Content="Ж"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="11" Grid.Row="0" Content="Э"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="12" Grid.Row="0" Content="Enter" Grid.ColumnSpan="3"   />
+            </Grid>
+            <Grid> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"> </ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="0" Content="Shift" />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="0" Content="Я"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="2" Grid.Row="0" Content="Ч"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="3" Grid.Row="0" Content="С"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="4" Grid.Row="0" Content="М"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="5" Grid.Row="0" Content="И"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="6" Grid.Row="0" Content="Т"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="7" Grid.Row="0" Content="Ь"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="8" Grid.Row="0" Content="Л"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="9" Grid.Row="0" Content="Б"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="10" Grid.Row="0" Content="Ю"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="11" Grid.Row="0" Content="."  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="12" Grid.Row="0" Content="Up"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="13" Grid.Row="0" Content="Shift"  Grid.ColumnSpan="2"/>
+            </Grid>
+             <Grid> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"> </ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource RoundButton}" Grid.Column="0" Grid.Row="0" Content="Ctrl" />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="1" Grid.Row="0" Content="Win"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="2" Grid.Row="0" Content="Alt"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="3" Grid.Row="0" Content="Space"  Grid.ColumnSpan="5"/>
+            <Button Style="{StaticResource RoundButton}" Grid.Column="8" Grid.Row="0" Content="Alt"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="9" Grid.Row="0" Content="Prop"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="10" Grid.Row="0" Content="Ctrl"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="11" Grid.Row="0" Content="Left"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="12" Grid.Row="0" Content="Down"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="13" Grid.Row="0" Content="Right"  />
+            <Button Style="{StaticResource RoundButton}" Grid.Column="14" Grid.Row="0" Content="Fn"/>
+            </Grid>
+        </StackPanel>
+    </DockPanel>
+</Window>
